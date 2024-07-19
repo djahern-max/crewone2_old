@@ -78,10 +78,14 @@ button:hover {
 }
 
 a {
+  text-decoration: none;
+}
+
+.link {
   color: #007bff;
   text-decoration: none;
 }
 
-a:hover {
+.link:hover {
   text-decoration: underline;
 }

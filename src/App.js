@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Register from "./components/Register";
-import Login from "./components/Login";
+import Login from "./components/Login"; // Corrected the import statement
 import Home from "./components/Home";
 import "./styles.css";
 
@@ -10,16 +10,6 @@ const App = () => {
     <Router>
       <div className="container">
         <h1>CrewOne2</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/register">Register</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-          </ul>
-        </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
