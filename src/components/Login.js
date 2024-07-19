@@ -18,6 +18,7 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h2>Login</h2>
       <div>
         <label>Email</label>
         <input
